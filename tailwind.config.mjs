@@ -11,7 +11,7 @@ module.exports = {
 	],
 	theme: {
 		fontFamily: {
-			sans: '"Teko Variable", sans-serif',
+			sans: '"Teko", sans-serif',
 		},
 		extend: {
 			spacing: {
