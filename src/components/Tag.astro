@@ -1,9 +1,13 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<p class="tw-text-black">{title}</p>
+<p
+  class="tw-text-black tw-bg-black/10 tw-py-6 tw-px-16 tw-rounded-2 tw-font-light tw-text-20 tw-tracking-wider tw-border-black/5 tw-border-2 tw-transition tw-cursor-default hover:tw-bg-black/15 hover:tw-border-black/10"
+>
+  {title}
+</p>

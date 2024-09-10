@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  href: string;
+}
+
+const { title, slug, href } = Astro.props;
+---
+
+<a href={href} target="_blank">
+  <span class="tw-sr-only">{title}</span>
+  <img
+    src={`./public/static/${slug}.svg`}
+    alt={`${title} Icon`}
+    width="48"
+    height="48"
+  />
+</a>

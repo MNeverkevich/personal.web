@@ -14,6 +14,39 @@ module.exports = {
 			sans: '"Teko", sans-serif',
 		},
 		extend: {
+			colors: {
+				gray: "#dcdcdc",
+				"gray-2": "#e5e5e5",
+				blue: "#3c93ff",
+				"dark-blue": "#264653",
+				yellow: "#E9C46A",
+				green: "#2A9D8F",
+				orange: "#E76F51",
+				"light-orange": "#F4A261",
+			},
+			fontSize: range(60).reduce(
+				(obj, val) => ({
+					...obj,
+					[val]: toRem(val),
+				}),
+				{},
+			),
+			lineHeight: {
+				...range(60).reduce(
+					(obj, val) => ({
+						...obj,
+						[val]: toRem(val),
+					}),
+					{},
+				),
+				...{
+					normal: "normal",
+				}
+			},
+			borderRadius: {
+				none: "0",
+				2: toRem(2),
+			},
 			spacing: {
 				...range(1601).reduce(
 					(obj, val) => ({

@@ -1,1 +1,22 @@
+@import "mixins";
 @import "fonts";
+
+.h2 {
+  text-shadow: rem(2) rem(2) 0 rgb(0 0 0 / 13%);
+  @apply tw-text-40 tw-leading-48 tw-font-bold tw-mb-24;
+}
+
+.h3 {
+  text-shadow: rem(2) rem(2) 0 rgb(0 0 0 / 13%);
+  @apply tw-text-30 tw-leading-38 tw-font-bold tw-mb-18;
+}
+
+.copy {
+  @apply tw-text-22 tw-leading-32 tw-font-light tw-tracking-wide;
+
+  p {
+    &:not(:last-child) {
+      @apply tw-mb-16;
+    }
+  }
+}

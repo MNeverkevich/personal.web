@@ -1,11 +1,98 @@
 ---
 // import { Picture } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-// import Tag from "../components/Tag.astro";
+import Tag from "../components/Tag.astro";
+import Social from "../components/Social.astro";
 ---
 
 <Layout title="Neverkevich Maxim • Front-End Developer">
-    <main>
-        <h1>Neverkevich Maxim • Front-End Developer!</h1>
-    </main>
+  <main class="tw-grid xl:tw-grid-cols-[300px_1fr_1fr] tw-min-h-screen">
+    <div class="tw-p-32 tw-bg-light-gray-2">
+      <h1 class="tw-text-28 tw-font-bold">
+        Neverkevich Maxim • <br /> Front-End Developer
+      </h1>
+    </div>
+    <div class="tw-bg-blue tw-p-32">
+      <h2 class="h2 tw-text-white">👋 Hello, friend!</h2>
+      <div class="copy tw-text-white">
+        <p>
+          My name is Neverkevich Maxim. I am a Front-End developer with industry
+          experience building websites and web applications. My role is to write
+          and style the front-end components that meet the requirements of the
+          client's mocks and fulfill the client's requirements.
+        </p>
+        <p>
+          My goal is to find a well-paid job with interesting projects and smart
+          people.
+        </p>
+      </div>
+    </div>
+    <div class="tw-bg-yellow tw-p-32">
+      <h2 class="h2">Software Development</h2>
+      <div class="tw-flex tw-flex-col tw-gap-48">
+        <div class="tw-relative">
+          <h3 class="h3">Languages</h3>
+          <div class="tw-flex tw-flex-wrap tw-gap-12">
+            <Tag title="JavaScript" />
+            <Tag title="TypeScript" />
+            <Tag title="HTML" />
+            <Tag title="SASS/SCSS" />
+            <Tag title="PHP" />
+          </div>
+        </div>
+        <div class="tw-relative">
+          <h3 class="h3">Technologies</h3>
+          <div class="tw-flex tw-flex-wrap tw-gap-12">
+            <Tag title="React.js" />
+            <Tag title="Vue.js" />
+            <Tag title="Astro" />
+            <Tag title="Vite" />
+            <Tag title="Webpack" />
+            <Tag title="Contentful CMS" />
+            <Tag title="Sanity CMS" />
+            <Tag title="Squarespace" />
+            <Tag title="Tailwind CSS" />
+            <Tag title="Hubspot" />
+            <Tag title="Marketo" />
+          </div>
+        </div>
+        <div class="tw-relative">
+          <h3 class="h3">Tools</h3>
+          <div class="tw-flex tw-flex-wrap tw-gap-12">
+            <Tag title="Figma" />
+            <Tag title="Zeplin" />
+            <Tag title="Sketch" />
+            <Tag title="VS Code" />
+            <Tag title="Zed" />
+            <Tag title="Warp" />
+            <Tag title="Notion" />
+            <Tag title="Arc Browser" />
+            <Tag title="Brave Browser" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-p-32 tw-bg-green"></div>
+    <div class="tw-p-32 tw-bg-dark-blue tw-text-white">
+      <h2 class="h2">Contact</h2>
+      <div class="tw-flex tw-flex-wrap tw-gap-28">
+        <Social
+          title="LinkedIn"
+          slug="linkedin"
+          href="https://linkedin.com/in/maximneverkevich"
+        />
+        <Social
+          title="GitHub"
+          slug="github"
+          href="https://github.com/MNeverkevich"
+        />
+        <Social
+          title="Mail"
+          slug="mail"
+          href="mailto:neverkevichmaxim@gmail.com"
+        />
+      </div>
+    </div>
+    <div class="tw-p-32 tw-bg-orange"></div>
+  </main>
 </Layout>
